@@ -99,13 +99,13 @@ The website is optimized for:
 1. **Clone the repository**
 
    ```
-   git clone https://github.com/nzyokam/feb-2025-javascript-events-and-basic-interactivity-nzyokam.git
+   git clone https://github.com/nzyokam/feb-2025-final-project-and-deployment-nzyokam.git
    ```
 
 2. **Navigate to the project directory**
 
    ```
-   cd feb-2025-javascript-events-and-basic-interactivity-nzyokam
+   cd feb-2025-final-project-and-deployment-nzyokam
    ```
 
 3. **Open with a live server**
