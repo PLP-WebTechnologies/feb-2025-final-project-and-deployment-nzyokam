@@ -141,9 +141,6 @@ luxury-haven-hotel/
 - Customer review submission
 - Image gallery with lightbox functionality
 
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 👤 Author
 
