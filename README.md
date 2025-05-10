@@ -99,13 +99,13 @@ The website is optimized for:
 1. **Clone the repository**
 
    ```
-   git clone https://github.com/muusi-nzyoka/luxury-haven-hotel.git
+   git clone https://github.com/nzyokam/feb-2025-javascript-events-and-basic-interactivity-nzyokam.git
    ```
 
 2. **Navigate to the project directory**
 
    ```
-   cd luxury-haven-hotel
+   cd feb-2025-javascript-events-and-basic-interactivity-nzyokam
    ```
 
 3. **Open with a live server**
