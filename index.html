@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+    <title>Luxury Haven Hotel</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header id="header">
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img
+              src="images/logo.svg"
+              alt="Luxury Haven Logo"
+              width="60"
+              height="60"
+            />
+            <h1>Luxury Haven</h1>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="rooms.html">Rooms & Suites</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text container">
+        <h1 class="fade-in">Experience Luxury Like Never Before</h1>
+        <p class="fade-in delay-1">
+          Indulge in a stay where comfort meets elegance, and every detail is
+          crafted for your pleasure.
+        </p>
+        <div class="hero-buttons fade-in delay-2">
+          <a href="rooms.html" class="btn btn-primary">Explore Rooms</a>
+          <a href="#" class="btn btn-secondary" id="bookNowBtn">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-concierge-bell"></i>
+            <h3>24/7 Service</h3>
+            <p>
+              Our dedicated staff is always at your service, ensuring your needs
+              are met any time of day.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-spa"></i>
+            <h3>Luxury Spa</h3>
+            <p>
+              Rejuvenate your senses with our world-class spa treatments and
+              facilities.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-utensils"></i>
+            <h3>Fine Dining</h3>
+            <p>
+              Experience culinary excellence with our award-winning restaurants
+              and chefs.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-swimming-pool"></i>
+            <h3>Infinity Pool</h3>
+            <p>
+              Swim in our stunning infinity pool with panoramic views of the
+              surrounding landscape.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Room Preview Section -->
+    <section class="room-preview">
+      <div class="container">
+        <h2 class="section-title">Featured Rooms</h2>
+        <div class="room-carousel">
+          <div class="room-card">
+            <div class="room-img">
+              <img src="/images/deluxe.svg" alt="Deluxe Suite" />
+            </div>
+            <div class="room-info">
+              <h3>Deluxe Suite</h3>
+              <p>
+                Spacious accommodation with a king-size bed and panoramic city
+                views.
+              </p>
+              <div class="room-features">
+                <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                <span><i class="fas fa-tv"></i> Smart TV</span>
+                <span><i class="fas fa-snowflake"></i> Air Conditioning</span>
+              </div>
+              <div class="room-price">
+                <span>From $299/night</span>
+                <a href="rooms.html" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="room-card">
+            <div class="room-img">
+              <img src="/images/executive.svg" alt="Executive Suite" />
+            </div>
+            <div class="room-info">
+              <h3>Executive Suite</h3>
+              <p>
+                Premium accommodation with separate living area and luxurious
+                amenities.
+              </p>
+              <div class="room-features">
+                <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                <span><i class="fas fa-bath"></i> Jacuzzi</span>
+                <span><i class="fas fa-coffee"></i> Coffee Machine</span>
+              </div>
+              <div class="room-price">
+                <span>From $459/night</span>
+                <a href="rooms.html" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button id="prevRoom" class="carousel-control">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="nextRoom" class="carousel-control">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Our Guests Say</h2>
+        <div class="testimonials-slider">
+          <div class="testimonial active">
+            <div class="testimonial-content">
+              <p>
+                "An unforgettable experience! The staff went above and beyond to
+                make our stay perfect. The rooms are immaculate and the
+                amenities are world-class."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>Sarah Johnson</h4>
+                <p>New York, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>
+                "The attention to detail at Luxury Haven is remarkable. From the
+                moment we arrived until our departure, everything was simply
+                perfect."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>David Chen</h4>
+                <p>Toronto, Canada</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>
+                "This is our third stay at Luxury Haven and it keeps getting
+                better. The new spa facilities are absolutely divine!"
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>Emma Roberts</h4>
+                <p>London, UK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Stay updated with our latest offers, packages, and events.</p>
+          <form id="newsletterForm">
+            <div class="form-group">
+              <input
+                type="email"
+                id="emailInput"
+                placeholder="Your Email Address"
+                required
+              />
+              <button type="submit" class="btn">Subscribe</button>
+            </div>
+            <p id="newsletterMessage" class="form-message"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>About Luxury Haven</h3>
+            <p>
+              Luxury Haven offers an unparalleled hospitality experience with
+              world-class amenities and personalized service.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-section links">
+            <!-- No Social Media So links go nowhere -->
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="rooms.html">Rooms & Suites</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, Prestige
+              City
+            </p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@luxuryhaven.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Luxury Haven Hotel. All Rights Reserved.</p>
+          <p>
+            <span style="margin-right: 10px">Coded by</span
+            ><a
+              id="name"
+              href="https://www.linkedin.com/in/muusi-nzyoka-64807b223"
+              >Nzyoka M. Nguutu</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Book Your Stay</h2>
+        <form id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkIn">Check In</label>
+              <input type="date" id="checkIn" required />
+            </div>
+            <div class="form-group">
+              <label for="checkOut">Check Out</label>
+              <input type="date" id="checkOut" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="adults">Adults</label>
+              <select id="adults" required>
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="children">Children</label>
+              <select id="children">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="roomType">Room Type</label>
+            <select id="roomType" required>
+              <option value="" disabled selected>Select a room type</option>
+              <option value="standard">Standard Room</option>
+              <option value="deluxe">Deluxe Suite</option>
+              <option value="executive">Executive Suite</option>
+              <option value="presidential">Presidential Suite</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="specialRequests">Special Requests</label>
+            <textarea
+              id="specialRequests"
+              rows="3"
+              placeholder="Any special requests or notes"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

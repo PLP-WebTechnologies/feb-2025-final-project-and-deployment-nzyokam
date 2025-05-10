@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+    <title>Rooms & Suites - Luxury Haven Hotel</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header id="header">
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img
+              src="images/logo.svg"
+              alt="Luxury Haven Logo"
+              width="60"
+              height="60"
+            />
+            <h1>Luxury Haven</h1>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html" class="active">Rooms & Suites</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <h1>Our Rooms & Suites</h1>
+        <p>Discover the perfect accommodation for your stay</p>
+      </div>
+    </section>
+
+    <!-- Room Filter -->
+    <section class="room-filter">
+      <div class="container">
+        <div class="filter-options">
+          <div class="filter-group">
+            <label for="typeFilter">Room Type</label>
+            <select id="typeFilter">
+              <option value="all">All Types</option>
+              <option value="standard">Standard Room</option>
+              <option value="deluxe">Deluxe Suite</option>
+              <option value="executive">Executive Suite</option>
+              <option value="presidential">Presidential Suite</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="viewFilter">View</label>
+            <select id="viewFilter">
+              <option value="all">All Views</option>
+              <option value="city">City View</option>
+              <option value="garden">Garden View</option>
+              <option value="ocean">Ocean View</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="priceFilter">Price Range</label>
+            <select id="priceFilter">
+              <option value="all">All Prices</option>
+              <option value="low">$100 - $250</option>
+              <option value="medium">$250 - $450</option>
+              <option value="high">$450+</option>
+            </select>
+          </div>
+          <button id="applyFilter" class="btn btn-primary">
+            Apply Filters
+          </button>
+          <button id="resetFilter" class="btn btn-outline">
+            Reset Filters
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms Listing -->
+    <section class="rooms-listing">
+      <div class="container">
+        <div class="rooms-grid" id="roomsGrid">
+          <!-- Standard Room -->
+          <div
+            class="room-item"
+            data-type="standard"
+            data-view="city"
+            data-price="low"
+          >
+            <div class="room-image">
+              <img src="/images/standard.svg" alt="Standard Room" />
+              <div class="room-tag">Most Popular</div>
+            </div>
+            <div class="room-details">
+              <h3>Standard Room</h3>
+              <div class="room-meta">
+                <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+                <span><i class="fas fa-bed"></i> 1 King Bed</span>
+                <span><i class="fas fa-vector-square"></i> 32 m²</span>
+              </div>
+              <div class="room-features">
+                <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                <span><i class="fas fa-tv"></i> Flat-screen TV</span>
+                <span><i class="fas fa-snowflake"></i> Air conditioning</span>
+                <span><i class="fas fa-coffee"></i> Coffee machine</span>
+              </div>
+              <p class="room-description">
+                Our comfortable standard rooms offer everything you need for a
+                relaxing stay, featuring city views and modern amenities.
+              </p>
+              <div class="room-price-booking">
+                <div class="price">
+                  <span class="amount">$175</span>
+                  <span class="period">per night</span>
+                </div>
+                <button
+                  class="btn btn-secondary book-now-btn"
+                  data-room="Standard Room"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deluxe Suite -->
+          <div
+            class="room-item"
+            data-type="deluxe"
+            data-view="garden"
+            data-price="medium"
+          >
+            <div class="room-image">
+              <img src="/images/deluxe.svg" alt="Deluxe Suite" />
+            </div>
+            <div class="room-details">
+              <h3>Deluxe Suite</h3>
+              <div class="room-meta">
+                <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+                <span><i class="fas fa-bed"></i> 1 King Bed</span>
+                <span><i class="fas fa-vector-square"></i> 45 m²</span>
+              </div>
+              <div class="room-features">
+                <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                <span><i class="fas fa-tv"></i> 55" Smart TV</span>
+                <span><i class="fas fa-bath"></i> Luxury Bathroom</span>
+                <span><i class="fas fa-couch"></i> Seating Area</span>
+              </div>
+              <p class="room-description">
+                Our deluxe suites offer additional space and comfort with a
+                separate seating area, luxury bathroom amenities, and garden
+                views.
+              </p>
+              <div class="room-price-booking">
+                <div class="price">
+                  <span class="amount">$299</span>
+                  <span class="period">per night</span>
+                </div>
+                <button
+                  class="btn btn-secondary book-now-btn"
+                  data-room="Deluxe Suite"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Executive Suite -->
+          <div
+            class="room-item"
+            data-type="executive"
+            data-view="garden"
+            data-price="medium"
+          >
+            <div class="room-image">
+              <img src="/images/executive.svg" alt="Executive Suite" />
+            </div>
+            <div class="room-details">
+              <h3>Executive Suite</h3>
+              <div class="room-meta">
+                <span><i class="fas fa-user-friends"></i> 3 Guests</span>
+                <span><i class="fas fa-bed"></i> 1 King Bed + Sofa</span>
+                <span><i class="fas fa-vector-square"></i> 60 m²</span>
+              </div>
+              <div class="room-features">
+                <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                <span><i class="fas fa-tv"></i> 65" Smart TV</span>
+                <span><i class="fas fa-bath"></i> Jacuzzi</span>
+                <span><i class="fas fa-utensils"></i> Kitchenette</span>
+              </div>
+              <p class="room-description">
+                Executive suites provide premium accommodation with separate
+                living areas, ocean views, and exclusive access to our Executive
+                Lounge.
+              </p>
+              <div class="room-price-booking">
+                <div class="price">
+                  <span class="amount">$459</span>
+                  <span class="period">per night</span>
+                </div>
+                <button
+                  class="btn btn-secondary book-now-btn"
+                  data-room="Executive Suite"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Presidential Suite -->
+          <div
+            class="room-item"
+            data-type="presidential"
+            data-view="ocean"
+            data-price="high"
+          >
+            <div class="room-image">
+              <img src="/images/presidential.svg" alt="Presidential Suite" />
+            </div>
+            <div class="room-details">
+              <h3>Presidential Suite</h3>
+              <div class="room-meta">
+                <span><i class="fas fa-user-friends"></i> 4 Guests</span>
+                <span><i class="fas fa-bed"></i> 1 King Bed + 2 Queen</span>
+                <span><i class="fas fa-vector-square"></i> 120 m²</span>
+              </div>
+              <div class="room-features">
+                <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                <span><i class="fas fa-tv"></i> Multiple TVs</span>
+                <span><i class="fas fa-swimmer"></i> Private Pool</span>
+                <span
+                  ><i class="fas fa-concierge-bell"></i> Butler Service</span
+                >
+              </div>
+              <p class="room-description">
+                Our most luxurious accommodation featuring panoramic ocean
+                views, private pool, multiple bedrooms, and personalized butler
+                service.
+              </p>
+              <div class="room-price-booking">
+                <div class="price">
+                  <span class="amount">$899</span>
+                  <span class="period">per night</span>
+                </div>
+                <button
+                  class="btn btn-secondary book-now-btn"
+                  data-room="Presidential Suite"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Room Features Section -->
+    <section class="room-features-section">
+      <div class="container">
+        <h2 class="section-title">All Rooms Include</h2>
+        <div class="features-icons">
+          <div class="feature-icon">
+            <i class="fas fa-wifi"></i>
+            <p>High-Speed WiFi</p>
+          </div>
+          <div class="feature-icon">
+            <i class="fas fa-concierge-bell"></i>
+            <p>24/7 Room Service</p>
+          </div>
+          <div class="feature-icon">
+            <i class="fas fa-door-closed"></i>
+            <p>Electronic Safe</p>
+          </div>
+          <div class="feature-icon">
+            <i class="fas fa-shower"></i>
+            <p>Premium Toiletries</p>
+          </div>
+          <div class="feature-icon">
+            <i class="fas fa-phone-alt"></i>
+            <p>Direct Dial Phone</p>
+          </div>
+          <div class="feature-icon">
+            <i class="fas fa-suitcase"></i>
+            <p>Luggage Storage</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="special-offers">
+      <div class="container">
+        <h2 class="section-title">Special Offers</h2>
+        <div class="offers-grid">
+          <div class="offer-card">
+            <div class="offer-content">
+              <h3>Weekend Escape</h3>
+              <p>
+                Book a weekend stay and get 20% off plus complimentary
+                breakfast.
+              </p>
+              <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+          </div>
+          <div class="offer-card">
+            <div class="offer-content">
+              <h3>Extended Stay</h3>
+              <p>
+                Stay 5 nights or more and receive 25% discount on your entire
+                stay.
+              </p>
+              <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What time is check-in and check-out?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Check-in time is 3:00 PM and check-out time is 12:00 PM. Early
+                check-in and late check-out can be arranged for an additional
+                fee, subject to availability.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Is breakfast included in the room rate?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Breakfast is included with some room types and packages. Please
+                check the room details or contact our reservations team to
+                confirm if breakfast is included in your booking.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you offer airport transfers?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we offer airport transfer services for an additional fee.
+                Please inform us of your flight details at least 24 hours prior
+                to your arrival.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Is there a cancellation fee?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Cancellations made 48 hours or more before check-in date are
+                free of charge. Cancellations made within 48 hours of check-in
+                will incur a fee equivalent to one night's stay.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Book Your Stay</h2>
+        <form id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkIn">Check In</label>
+              <input type="date" id="checkIn" required />
+            </div>
+            <div class="form-group">
+              <label for="checkOut">Check Out</label>
+              <input type="date" id="checkOut" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="adults">Adults</label>
+              <select id="adults" required>
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="children">Children</label>
+              <select id="children">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="roomType">Room Type</label>
+            <select id="roomType" required>
+              <option value="" disabled selected>Select a room type</option>
+              <option value="standard">Standard Room</option>
+              <option value="deluxe">Deluxe Suite</option>
+              <option value="executive">Executive Suite</option>
+              <option value="presidential">Presidential Suite</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="specialRequests">Special Requests</label>
+            <textarea
+              id="specialRequests"
+              rows="3"
+              placeholder="Any special requests or notes"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>About Luxury Haven</h3>
+            <p>
+              Luxury Haven offers an unparalleled hospitality experience with
+              world-class amenities and personalized service.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-section links">
+            <!-- No Social Media So links go nowhere -->
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="rooms.html">Rooms & Suites</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, Prestige
+              City
+            </p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@luxuryhaven.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Luxury Haven Hotel. All Rights Reserved.</p>
+          <p>
+            <span style="margin-right: 10px">Coded by</span
+            ><a
+              id="name"
+              href="https://www.linkedin.com/in/muusi-nzyoka-64807b223"
+              >Nzyoka M. Nguutu</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
