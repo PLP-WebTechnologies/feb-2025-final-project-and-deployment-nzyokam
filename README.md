@@ -1,12 +1,12 @@
 # Luxury Haven Hotel Website
 
-![Luxury Haven Hotel](https://luxuryhaven.netlify.app/images/hero-bg.svg)
+![Luxury Haven Hotel](/images/banner.png)
 
 ## 📝 Description
 
 Luxury Haven Hotel is a premium, fully responsive multi-page website for a luxury hotel chain. The project showcases modern web development practices using HTML5, CSS3, and JavaScript, creating an elegant and interactive user experience.
 
-**Live Site:** [Luxury Haven Hotel](https://luxuryhaven.netlify.app)
+**Live Site:** [Luxury Haven Hotel](https://luxurehaven.netlify.app/)
 
 **Coded by:** Muusi Nguutu Nzyoka
 
